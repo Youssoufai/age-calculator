@@ -1,0 +1,78 @@
+$purple: hsl(259, 100%, 65%);
+$light-red: hsl(0, 100%, 67%);
+$white: hsl(0, 0%, 100%);
+$off-white: hsl(0, 0%, 94%);
+$light-grey: hsl(0, 0%, 86%);
+$smokey-grey: hsl(0, 1%, 44%);
+$off-black: hsl(0, 0%, 8%);
+
+/* || Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $light-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    .calculator {
+        background: $white;
+        width: 500px;
+        height: 25rem;
+        padding: 2rem 2rem 1rem 2rem;
+        border-radius: 1rem;
+        border-bottom-right-radius: 10rem;
+
+        input {
+            width: 6rem;
+            height: 3rem;
+            padding: 0 1rem;
+        }
+
+        header {
+            display: flex;
+        }
+    }
+
+    .output {
+        display: flex;
+        align-items: center;
+
+        div {
+            hr {
+                width: 23rem;
+            }
+        }
+
+        div {
+            img {
+                background: $purple;
+                padding: 1rem;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.inputs {
+    margin-right: 2rem;
+
+    h3 {
+        font-size: 1rem;
+        color: $smokey-grey;
+    }
+
+    input {
+        border: 1px solid $smokey-grey;
+        border-radius: 5px;
+        color: $off-black;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,58 @@
+/* || Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 0%, 86%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body .calculator {
+  background: hsl(0, 0%, 100%);
+  width: 500px;
+  height: 25rem;
+  padding: 2rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  border-bottom-right-radius: 10rem;
+}
+body .calculator input {
+  width: 6rem;
+  height: 3rem;
+  padding: 0 1rem;
+}
+body .calculator header {
+  display: flex;
+}
+body .output {
+  display: flex;
+  align-items: center;
+}
+body .output div hr {
+  width: 23rem;
+}
+body .output div img {
+  background: hsl(259, 100%, 65%);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.inputs {
+  margin-right: 2rem;
+}
+.inputs h3 {
+  font-size: 1rem;
+  color: hsl(0, 1%, 44%);
+}
+.inputs input {
+  border: 1px solid hsl(0, 1%, 44%);
+  border-radius: 5px;
+  color: hsl(0, 0%, 8%);
+  font-size: 1.5rem;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */
