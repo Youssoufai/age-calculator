@@ -13,11 +13,18 @@ body {
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+body .error-class {
+  color: red;
+}
+body .error-input {
+  border: 1px solid hsl(0, 100%, 67%);
+  outline: 1px sol hsl(0, 100%, 67%);
+}
 body .calculator {
   background: hsl(0, 0%, 100%);
-  width: 500px;
-  height: 25rem;
-  padding: 2rem 2rem 1rem 2rem;
+  width: 650px;
+  height: 30rem;
+  padding: 2rem 2rem 2rem 3rem;
   border-radius: 1rem;
   border-bottom-right-radius: 10rem;
 }
@@ -29,17 +36,34 @@ body .calculator input {
 body .calculator header {
   display: flex;
 }
+body #error {
+  display: none;
+}
 body .output {
   display: flex;
   align-items: center;
 }
 body .output div hr {
-  width: 23rem;
+  width: 30rem;
 }
 body .output div img {
-  background: hsl(259, 100%, 65%);
+  background: hsl(259, 94%, 57%);
   padding: 1rem;
   border-radius: 50%;
+  cursor: pointer;
+}
+body .output div img:hover {
+  background: hsl(0, 0%, 8%);
+}
+body .outputs {
+  padding-bottom: 3rem;
+}
+body .outputs div {
+  font-size: 4rem;
+  font-weight: 800;
+}
+body .outputs div .date {
+  color: hsl(259, 94%, 57%);
 }
 
 .inputs {
@@ -48,6 +72,7 @@ body .output div img {
 .inputs h3 {
   font-size: 1rem;
   color: hsl(0, 1%, 44%);
+  margin-bottom: 5px;
 }
 .inputs input {
   border: 1px solid hsl(0, 1%, 44%);
@@ -55,4 +80,14 @@ body .output div img {
   color: hsl(0, 0%, 8%);
   font-size: 1.5rem;
   font-weight: 600;
+}
+.inputs input:hover, .inputs input:active {
+  border: 1px solid hsl(0, 0%, 8%);
+  outline: 1px solid hsl(0, 0%, 8%);
+}
+
+@media screen and (max-width: 500px) {
+  .calculator {
+    width: 200px;
+  }
 }/*# sourceMappingURL=style.css.map */
