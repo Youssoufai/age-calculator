@@ -86,8 +86,33 @@ body .outputs div .date {
   outline: 1px solid hsl(0, 0%, 8%);
 }
 
-@media screen and (max-width: 500px) {
-  .calculator {
-    width: 200px;
+@media screen and (max-width: 700px) {
+  body .calculator {
+    width: 15rem;
+    height: 20rem;
+    font-size: 1rem;
+    border-bottom-right-radius: 30%;
+    padding: 2rem 1rem 3rem 1rem;
+  }
+  body .calculator .outputs div {
+    font-size: 2rem;
+  }
+  body .calculator input {
+    width: 3rem;
+    height: 1.8rem;
+  }
+  body .calculator .inputs h3 {
+    font-size: 0.8rem;
+  }
+  body .calculator img {
+    width: 2rem;
+    height: 1rem;
+    margin-left: -7rem;
+  }
+  body .calculator .output {
+    margin-top: 1rem;
+  }
+  body .calculator .output div hr {
+    width: 30vw;
   }
 }/*# sourceMappingURL=style.css.map */
